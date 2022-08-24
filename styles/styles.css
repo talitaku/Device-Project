@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "raleway extrabold";
+  font-style: normal;   /*как понять normal, regular или extrabold?*/
+  font-weight: 800;
+  src: url("fonts\raleway\raleway-800.woff2"); format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "rubik regular";   /*"rubik regular" или просто "rubik"?*/
+  font-style: normal;     /*как понять normal или regular?*/
+  font-weight: 400;
+  src: url("fonts\rubik\rubik-400.woff2"); format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "rubik bold";
+  font-style: normal;   /*как понять normal, regular, или bold?*/
+  font-weight: 700;
+  src: url("fonts\rubik\rubik-700.woff2"); format("woff2");
+  font-display: swap;
+}
+body {
+  font-family: "rubik regular", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.page-footer {
+  color: #FFFFFF;
+  background-color: #444444;
+}
+.contacts-phone {
+  font-family: "rubik regular", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+}
