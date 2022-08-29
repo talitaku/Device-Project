@@ -7,37 +7,31 @@
   </head>
   <body>
     <header class="main-header">
+      <h2 class="visually-hidden">Меню пользователя</h2>
       <img class="logo" src="image\logo.svg" width="145" height="36" alt="Логотип интернет магазина Device">
-      <nav class="main-navigation">
+      <nav class="main-header-navigation">
         <form class="search" action="" method="get">
-          <input name="s" placeholder="Текст поиска" type="search">
-          <button type="submit">Найти</button>
+          <input name="search-input" placeholder="Текст поиска" type="search">
+          <button class="search-button-text" type="submit">Найти</button>
         </form>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item navigation-user">
-          <a class="navigation-link" href="#">Коля Петухов</a>
+        <ul class="navigation-user-list">
+          <li class="navigation-user-item">
+          <a class="navigation-user-link" href="#">Коля Петухов</a>
           </li>
-          <li class="navigation-item navigation-user">
-          <a class="navigation-link" href="#">Выйти</a>
+          <li class="navigation-user-item">
+          <a class="navigation-user-link" href="#">Выйти</a>
           </li>
-          <li class="navigation-item">
-          <a class="navigation-link" href="#">Сравнить</a>
-          </li>
-          <li class="navigation-item">
-          <a class="navigation-link" href="#">Корзина</a>
-          </li>
+            <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">Сравнить</a>
+            </li>
+            <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">Корзина</a>
+            </li>
         </ul>
-        <ul class="navigation-list main-katalog">
-          <!-- текст "Каталог товаров" и иконка "+" открывают список подменю каталога товаров -->
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Каталог товаров</a>
-          </li>
-          <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="visually-hidden">+ открыть каталог</span>
-          </a>
-          </li>
-        </ul>
+        <div class="main-navigation-katalog">
+          <a class="navigation-link" href="#">Каталог товаров</a>
+          <img src="image\catalog-plus.svg" alt="Открыть каталог">
+        </div>
         <ul class="navigation-list">
           <li class="navigation-item">
           <a class="navigation-link" href="delivery.html">Доставка</a>
@@ -70,10 +64,10 @@
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">фильтр:</legend>
+            <legend class="catalog-filter-title1">фильтр:</legend>
           </fieldset>
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Стоимость</legend>
+            <legend class="catalog-filter-title2">Стоимость</legend>
             <button class="range-toggle toggle-min" type="button">
               <span class="visually-hidden">Изменить минимальную цену</span>
             </button>
@@ -88,7 +82,7 @@
             </label>
           </fieldset>
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Цвет</legend>
+            <legend class="catalog-filter-title2">Цвет</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -128,7 +122,7 @@
             </ul>
           </fieldset>
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Bluetooth</legend>
+            <legend class="catalog-filter-title2">Bluetooth</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -165,29 +159,33 @@
           <ul class="product-list">
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="" alt="">
-                <h3 class="product-card-title">Любительская селфи-палка</h3>
+                <img class="product-card-image" src="image\catalog (1).png" alt="">
+                <h3 class="product-card-title">Любительская
+                  <br>селфи-палка</h3>
               </a>
               <span class="product-card-price">500 ₽</span>
           </li>
             <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="">
-              <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+              <img class="product-card-image" src="image\catalog (2).png" alt="">
+              <h3 class="product-card-title">Профессиональная
+                <br>селфи-палка</h3>
             </a>
             <span class="product-card-price">1 500 ₽</span>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="" alt="">
-                <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+                <img class="product-card-image" src="image\catalog (3).png" alt="">
+                <h3 class="product-card-title">Непотопляемая
+                  <br>селфи-палка</h3>
               </a>
               <span class="product-card-price">2 500 ₽</span>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="" alt="">
-                <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+                <img class="product-card-image" src="image\catalog (4).png" alt="">
+                <h3 class="product-card-title">Селфи-палка «Следуй
+                  <br>за мной»</h3>
               </a>
               <span class="product-card-price">1 500 ₽</span>
             </li>
@@ -225,14 +223,14 @@
     </main>
     <footer class="page-footer">
       <section class="footer-address">
-        <h2 class="visually-hidden">Адрес</h2>
         <img class="footer-address-logo" src="image\logo_yellow.svg" width="144" height="36" alt="Логотип Интернет магазин Device">
         <address class="footer-address">
-        <p class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <h2 class="visually-hidden">Адрес</h2>
+        <p class="footer-address">Санкт-Петербург, набережная
+          <br>реки Карповки, 5, литера П.</p>
       </address>
       </section>
       <section class="footer-contants">
-        <h2 class="visually-hidden">Контакты</h2>
         <ul class="footer-navigation-list">
           <li class="footer-navigation-item">
           <a class="footer-navigation-link" href="#">Доставка</a>
@@ -264,7 +262,7 @@
       </section>
       <section class="footer-phone">
         <h2 class="visually-hidden">Телефон</h2>
-        <a class="contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+        <a class="phone-number" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         <br>
         <img class="footer-mini-logo" src="image\html-a_logo.svg" width="114" height="33" alt="Логотип HTML Academy">
       </section>

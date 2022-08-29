@@ -62,17 +62,20 @@ input::-webkit-input-placeholder {
   letter-spacing: 20%;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: .2em;
   background-color: #FFE17F;
 }
-.slider-1 {
-  background-color: #FFE17F;
-}
+
+/* ... оформление main страницы index ... */
+
 .slider-number {
   font-family: "rubik", sans-serif;
   font-size: 180px;
   font-weight: 700;
   line-height: 30px;
   color: #FFFFFF;
+  text-align: right;
+  background-color: #FFE17F;
 }
 .slider-title {
   font-family: "raleway", sans-serif;
@@ -129,6 +132,10 @@ input::-webkit-input-placeholder {
   line-height: 30px;
   color: #444444;
 }
+.offer {
+  background-color: #F0F0F0;
+  text-align: center;
+}
 .offer-text {
   font-family: "raleway", sans-serif;
   font-size: 20px;
@@ -136,16 +143,173 @@ input::-webkit-input-placeholder {
   line-height: 24px;
   color: inherit;
   text-transform: uppercase;
+  letter-spacing: .2em;  /* 20% */
 }
-
-
-
-
-
-
+.about-us-title {
+  font-family: "raleway", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  color: inherit;
+}
+.about-us-text {
+  font-family: "rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+}
+.about-us-list {
+  font-family: "rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: inherit;
+  letter-spacing: -.02em;
+}
+.contacts-title {
+  font-family: "raleway", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  color: inherit;
+}
+.contacts-text {
+  font-family: "rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+}
+.contacts-subtitle {
+  font-family: "rubik", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #444444;
+}
+.contacts-adress-text {
+  font-family: "rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+  font-style: normal;
+}
+.contacts-phone {
+  font-family: "rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+  font-style: normal;
+}
+.contacts-schedule-item {
+  font-family: "rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+  list-style-type: none;
+}
+.contacts-schedule {
+  padding-left: 0;
+}
+.subscribe-subtitle {
+  font-family: "raleway", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  color: inherit;
+}
+.subscribe-text {
+  font-family: "rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+}
 .subscribe {
   background-color: #F0F0F0;
 }
+
+/* ... оформление main страницы catalog ... */
+
+.inner-header-title {
+  font-family: "raleway", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  color: inherit;
+}
+.breadscrumbs-link {
+  font-family: "rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #000000;
+  text-decoration: none;
+}
+.catalog-filter-title1 {
+  font-family: "raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 19px;
+  color: inherit;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+.catalog-filter-title2 {
+  font-family: "rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: inherit;
+  letter-spacing: -.02em;
+}
+span.control-label {
+  font-family: "rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: inherit;
+}
+form.sorting-type {
+  font-family: "raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 19px;
+  color: inherit;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+.product-card-title {
+  font-family: "rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+  letter-spacing: -.02em;
+  text-decoration: none;
+}
+.product-card-price {
+  font-family: "rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #444444;
+}
+.pagination-link {
+  font-family: "rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #444444;
+  text-decoration: none;
+}
+
+/*  ... футер... */
+
 .page-footer {
   color: #FFFFFF;
   background-color: #444444;
@@ -153,10 +317,28 @@ input::-webkit-input-placeholder {
 .page-footer a {
   color: inherit;
 }
+.footer-address {
+  font-family: "rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #FFFFFF;
+  font-style: normal;
+}
+.footer-navigation-list {
+  font-family: "raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  text-decoration: none;
+}
 .phone-number {
   font-family: "rubik", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  color: inherit;
+  color: #FFFFFF;
 }
