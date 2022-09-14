@@ -19,7 +19,13 @@
   src: url("fonts\rubik\rubik-700.woff2"); format("woff2");
   font-display: swap;
 }
+html {
+  height: 100%;
+}
 body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
   font-family: "rubik", "arial" sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -68,6 +74,9 @@ input::-webkit-input-placeholder {
 
 /* ... оформление main страницы index ... */
 
+.main-container {
+  flex-grow: 1;
+}
 .slider-number {
   font-family: "rubik", sans-serif;
   font-size: 180px;
