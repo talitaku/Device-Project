@@ -35,6 +35,60 @@ body {
 /*...хедер...*/
 .main-header {
   background-color: #FFE17F;
+  width: 1160px;
+  margin: 0 auto;
+}
+.main-header-navigation {
+  width: 1040px;
+  align-content: space-between;
+  margin: 0 auto;
+  border: 1px solid blue;  /* ! ориентиры ! убрать в конце ! */
+}
+.navigation-user-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.navigation-user-item:last-child {
+  justify-content: flex-end;
+}
+.navigation-user-item:nth-child(3) {
+  margin-left: auto;
+}
+.navigation-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.navigation-item:last-child {
+  justify-content: flex-end;
+}
+.navigation-item:nth-child(3) {
+  margin-left: auto;
+}
+.slider-1 {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+.image-container {
+  width: 1111px;
+  border: 1px solid blue;  /* ! ориентиры ! убрать в конце ! */
+}
+.description-container {
+  width: 560px;
+  border: 1px solid blue;  /* ! ориентиры ! убрать в конце ! */
+}
+.slider-2, .slider-3 {   /* скрыты 2 слайда */
+  display: none;
+}
+.categories-list {
+  display: flex;
+}
+.categories-square {
+  width: 160px;
+  height: 160px;
+  background: #FFE17F;
 }
 /*...как настроить внешний вид строки поиска?...*/
 input::-webkit-input-placeholder {

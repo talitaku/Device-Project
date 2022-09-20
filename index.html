@@ -8,13 +8,15 @@
   <body>
     <header class="main-header">
       <h2 class="visually-hidden">Меню пользователя</h2>
-      <img class="logo" src="image\logo.svg" width="145" height="36" alt="Логотип интернет магазина Device">
       <nav class="main-header-navigation">
-        <form class="search" action="" method="get">
-          <input name="search-input" placeholder="Текст поиска" type="search">
-          <button class="search-button-text" type="submit">Найти</button>
-        </form>
+        <img class="logo" src="image\logo.svg" width="145" height="36" alt="Логотип интернет магазина Device">
         <ul class="navigation-user-list">
+          <li class="navigation-user-item">
+            <form class="search" action="" method="get">
+              <input name="search-input" placeholder="Текст поиска" type="search">
+              <button class="search-button-text" type="submit">Найти</button>
+            </form>
+          </li>
           <li class="navigation-user-item">
           <a class="navigation-user-link" href="#">Войти</a>
           </li>
@@ -25,11 +27,13 @@
             <a class="navigation-user-link" href="#">Корзина</a>
             </li>
         </ul>
-        <div class="main-navigation-katalog">
-          <a class="navigation-link" href="#">Каталог товаров</a>
-          <img src="image\catalog-plus.svg" width="50" height="50" alt="Открыть каталог">
-        </div>
         <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Каталог товаров</a>
+          </li>
+          <li class="navigation-item">
+            <img src="image\catalog-plus.svg" width="50" height="50" alt="Открыть каталог">
+          </li>
           <li class="navigation-item">
           <a class="navigation-link" href="delivery.html">Доставка</a>
           </li>
@@ -48,29 +52,42 @@
         <h2 class="visually-hidden">Промо товары</h2>
         <!-- слайдер с описанием промо товаров -->
         <div class="slider-1">
-          <p class="slider-number">01</p>
-          <img class="slider-1-image" width="560" height="560" alt="Фото товара" src="image\slider-1.png">
-          <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущее фото</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следущее фото</span>
-          </button>
-          <p class="slider-title">Порхает как бабочка,
-            <br>жалит как пчела!</p>
-          <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен
-            <br>мощным лазером, замаскированным под стандартную камеру.</p>
-            <a class="navigation-link" href="#">Подробнее</a>
-          <table class="slider-table">
-            <tr class="slider-table-item">
-              <td class="slider-table-title">800м</td>
-              <td class="slider-table-title">50м</td>
-            </tr>
-            <tr class="slider-1-table-item">
-              <td class="slider-table-text">Дальность полета</td>
-              <td class="slider-table-text">Радиус поражения</td>
-            </tr>
-          </table>
+          <div class="image-container">
+            <p class="slider-number">01</p>
+            <button class="slider-button slider-prev" type="button">
+            <img src="image\slider-prev.svg" alt="Предыдущее фото">
+            </button>
+            <img class="slider-1-image" width="560" height="560" alt="Фото товара" src="image\slider-1.png">
+            <button class="slider-button slider-next" type="button">
+            <img src="image\slider-next.svg" alt="Следущее фото">
+            </button>
+          </div>
+          <div class="description-container">
+            <p class="slider-title">Порхает как бабочка,
+              <br>жалит как пчела!</p>
+            <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен
+              <br>мощным лазером, замаскированным под стандартную камеру.</p>
+              <a class="navigation-link" href="#">Подробнее</a>
+              <button class="description-button description-prev" type="button">
+              <img src="image\slide-active.svg" alt="Слайд 1">
+              </button>
+              <button class="description-button description-next" type="button">
+              <img src="image\slide-next.svg" alt="Слайд 2">
+              </button>
+              <button class="description-button description-next" type="button">
+              <img src="image\slide-next.svg" alt="Слайд 3">
+              </button>
+            <table class="slider-table">
+              <tr class="slider-table-item">
+                <td class="slider-table-title">800м</td>
+                <td class="slider-table-title">50м</td>
+              </tr>
+              <tr class="slider-1-table-item">
+                <td class="slider-table-text">Дальность полета</td>
+                <td class="slider-table-text">Радиус поражения</td>
+              </tr>
+            </table>
+          </div>
         </div>
         <div class="slider-2">
           <p class="slider-number">02</p>
@@ -122,30 +139,18 @@
             </tr>
           </table>
         </div>
-        <ol class="slider-pagination">
-        <li class="slider-pagination-item">
-          <button class="slider-pagination-button slider-pagination-button-current">
-            <span class="visually-hidden">1 слайд</span>
-          </button>
-        </li>
-        <li class="slider-pagination-item">
-          <button class="slider-pagination-button" type="button">
-            <span class="visually-hidden">2 слайд</span>
-          </button>
-        </li>
-        <li class="slider-pagination-item">
-          <button class="slider-pagination-button" type="button">
-            <span class="visually-hidden">3 слайд</span>
-          </button>
-        </li>
-      </ol>
       </section>
       <section class="categories">
         <h2 class="visually-hidden">Категории товаров</h2>
         <!-- список категорий -->
         <ul class="categories-list">
           <li class="categories-item">
-          <a class="categories-link" href="#">Виртуальная реальность</a>
+            <div class="categories-container">
+              <div class="categories-square">
+                <img class="categories-img" src="image\vr-glasses.svg" alt="">
+              </div>
+              <a class="categories-link" href="#">Виртуальная реальность</a>
+            </div>
           </li>
           <li class="categories-item">
           <a class="categories-link" href="#">Моноподы для селфи</a>
